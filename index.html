@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove thesse styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;  display: flex;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+   <main>
+  
+    <article class="card-container1" id="card1">
+       <div class="start">
+        <img src="images/icon-star.svg" alt="start">
+       </div>
+       <div class="info-central">
+         <h1>How did we do?</h1>
+         <p id="info-p">Please let us know how we did with your <br> support request. All feedback is appreciated <br> 
+          to help us improve our offering!s </p>
+          <!-- isso e so um teste-->
+          <p id="info-d">Please let us know how we did with your  support request. All feedback is appreciated 
+            to help us improve our offering!s </p>
+       </div>
+       <form>
+        <input type="button" name="numero" value="1" id="number1">
+        <input type="button" name="numero" value="2" id="number2">
+        <input type="button" name="numero" value="3" id="number3">
+        <input type="button" name="numero" value="4" id="number4">
+        <input type="button" name="numero" value="5" id="number5">
+        <input type="button" name="button" id="btn-enviar" value="Submit" >
+        
+      
+       </form>
+    </article>
+
+    <article class="card-container2" id="card2" >
+         <div class="block-imagem">
+          <img src="images/illustration-thank-you.svg" alt="thank-you">
+         </div>
+         <p id="your-selected">You selected  0 out of 5</p>
+         <div class="info-thank">
+            <h3>Thank you!</h3>
+            <p class="finaly-text">We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch!</p>
+         </div>
+    </article>
+
+   </main>
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+  <script src="js/card-form.js"></script>
+</body>
+</html>

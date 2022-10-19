@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    background-color: var(--Very-Dark-Blue);
+}
+
+
+:root{
+  /*### Primary*/
+
+--Orange: hsl(25, 97%, 53%);
+
+/*### Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+h1{
+  font-size: 1.5rem;
+  color: var(--White);
+  margin-bottom: 10px;
+}
+
+p{
+   color: var(--Medium-Grey);
+   margin-bottom: 25px ;
+}
+
+
+.card-container1{
+    content: "";
+    position: relative;
+    top: 100px;
+    width: 332px;
+    height: 363px;
+    border-radius: 15px;
+    background-color: #212832;
+    margin: 0 auto;
+    
+}
+
+
+.start{
+    background-color: #262f38;
+    margin: 17px;
+    padding: 14px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.info-central{
+    margin: 15px;
+    margin-left: 17px;
+}
+
+
+/*Não preciso editar esse aqui*/
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px auto;
+}
+
+input{
+    margin: 8px;
+    margin-right: 10px;
+    border: none;
+}
+
+
+input[name="numero"] {
+    border: none;
+    background-color:#262f38;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+
+input[name="numero"]:hover {
+    background-color: var(--Orange);
+}
+
+
+input[name="button"]{
+    width: 295px;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: var(--White);
+    background-color: var(--Orange);
+    cursor: pointer;
+}
+
+input[name="button"]:hover{
+    background-color: var(--White);
+    color:var(--Orange);
+}
+
+
+#info-d{
+    display: none;
+}
+
+#info-p{
+    display: block;
+    line-break: anywhere;   
+    font-size: 14.5px;
+}
+
+/*card2*/
+
+.card-container2{
+    content: "";
+    position: relative;
+    top: -300px;
+    width: 328px;
+    height: 363px;
+    border-radius: 15px;
+    background-color: var(--Dark-Blue);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-imagem{
+     margin: 30px auto;
+}
+
+#your-selected{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#2e3641;
+    width: 190px;
+    border-radius: 25px;
+    padding: 8px;
+    margin: 0 auto;
+    color: var(--Orange);
+}
+
+.info-thank{
+    margin: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--White);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media (min-width: 1000px){
+    .card-container1{
+        content: "";
+        position: relative;
+        top: 100px;
+        bottom: 0;
+        width: 410px;
+        height: 418px;
+        border-radius: 25px;
+        background-color: var(--Dark-Blue);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .card-container2{
+        content: "";
+        position: relative;
+        top: -300px;
+        bottom: 0;
+        width: 410px;
+        height: 418px;
+        border-radius: 25px;
+        background-color: var(--Dark-Blue);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[name="numero"] {
+      background-color: #323e49;
+    }
+
+    .start{
+        background-color: #323e49;
+        margin-left: 45px;
+        margin: 29px;
+    }
+
+    .info-central{
+        margin: 15px;
+        margin-left: 35px;
+    }
+ 
+    #info-p{
+        display: none;
+    }
+    #info-d {
+       display: block;
+    }
+
+    p{
+        line-height: 22px;
+     }
+
+
+     form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    
+    input{
+        margin: 10px;
+        border: none;
+    }
+
+    input[name="numero"] {
+       
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+      
+    }
+
+    input[name="button"]{
+        width: 350px;
+        padding: 15px;
+       margin-top: 15px;
+    }
+    
+    .info-thank{
+        margin: 25px;
+        margin-top: 35px;
+        text-align: center;
+    }
+}
